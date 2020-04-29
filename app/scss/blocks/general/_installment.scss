@@ -1,0 +1,143 @@
+.installment {
+  margin-top: 96px;
+
+  &__wrap {
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__items {
+    display: flex;
+    width: 100%;
+  }
+
+  &__item {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &-3 {
+      background-color: #a7bb61;
+    }
+
+    &-6 {
+      background-color: #9eb15b;
+    }
+
+    &-9 {
+      background-color: #95a850;
+    }
+
+    &-12 {
+      background-color: #8da148;
+    }
+  }
+
+  &__count {
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 34px;
+  }
+
+  &__subtitle {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 34px;
+
+  }
+
+  &__l {
+    position: relative;
+    text-align: center;
+    &_wrapper {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      left: 50%;
+    }
+
+    &_title {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 24px;
+      margin-bottom: 5px;
+    }
+
+    &_subtitle {
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      margin-bottom: 15px;
+    }
+
+    &_btn {
+      padding: 11px 0;
+      width: 140px;
+      margin: 0 auto;
+    }
+
+  }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .installment {
+    &__wrap {
+      height: auto;
+      flex-wrap: wrap;
+      width: 500px;
+      margin: 0 auto;
+    }
+    &__item {
+      height: 100px;
+    }
+
+    &__l {
+      height: 140px;
+      object-fit: cover;
+      width: 100%;
+      &_img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .installment__wrap {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 425px)  {
+  .installment {
+    margin-top: 42px;
+    &__wrap {
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0 auto;
+    }
+    &__item {
+      height: 100px;
+    }
+
+    &__l {
+      width: 100%;
+      &_img {
+        height: 100%;
+      }
+    }
+  }
+
+
+}

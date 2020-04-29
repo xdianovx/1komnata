@@ -2,7 +2,52 @@
 @import "libs";
 @import "fonts";
 @import "interface";
+//index.html
+@import "blocks/general/header";
+@import "blocks/general/menu";
+@import "blocks/general/main";
+@import "blocks/general/items";
+@import "blocks/general/features";
+@import "blocks/general/offer";
+@import "blocks/general/installment";
+@import "blocks/general/about";
+@import "blocks/general/order";
+@import "blocks/general/info";
+@import "blocks/general/footer";
+//sidebar
+@import "products";
+//kitchens.html
+@import "blocks/kitchens/kitchens";
+//furniture.html
+@import "blocks/furniture/furniture";
 
+.accordion {
+  background-color: #CFD8DC;
+  color: #fff;
+  cursor: pointer;
+  padding: 16px;
+  width: 50%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.active, .accordion:hover {
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+}
 
 
 

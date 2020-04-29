@@ -1,0 +1,154 @@
+.offer {
+  background-image: url(../img/offer-bg.png);
+  background-position-y: 134px;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  &__h2 {
+    margin-top: 92px;
+  }
+  &__wrap {
+    margin-top: 53px;
+    display: flex;
+    justify-content: space-between;
+    &_item {
+      width: 263px;
+      height: 230px;
+      position: relative;
+    }
+    &_text {
+      background: url(../img/offer-badge.png) no-repeat center/cover;
+      width: 119%;
+      height: 54px;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      content: '';
+      transform: translateX(-50%);
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 33.97px;
+    margin-top: 104px;
+    text-align: center;
+  }
+}
+
+.offer-list {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__text {
+    margin-left: 21px;
+  }
+
+  &__img {
+    height: 40px;
+  }
+  &__item {
+    display: flex;
+    width: 50%;
+  }
+  &__title {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 33.97px;
+  }
+
+  &__subtext {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21.98px;
+  }
+}
+
+.offer__wrap_item > .items__item_background p {
+  font-size: 22px;
+}
+
+.offer__wrap_item > .items__item_background{
+  top: -18px;
+}
+
+@media screen and (max-width: 1024px) {
+ .offer {
+   margin: 0 15px;
+   &__wrap {
+     flex-wrap: wrap;
+     justify-content: space-around;
+     &_item {
+       margin-top: 20px;
+     }
+   }
+
+ }
+  .offer-list {
+    &__title {
+      line-height: 19px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .offer-list {
+    &__title {
+      line-height: 19px;
+    }
+
+    &__item {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .offer {
+    &__h2 {
+      margin-top: 36px;
+    }
+
+    &__wrap {
+      margin-top: 15px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      line-height: 24px;
+      margin-top: 44px;
+    }
+  }
+  .offer-list {
+    flex-direction: column;
+    &__item {
+      width: 100%;
+      margin-bottom: 23px;
+    }
+    &__img {
+      height: 30px;
+    }
+
+    &__text {
+      margin-left: 9px;
+    }
+
+    &__title {
+      font-size: 13px;
+    }
+
+    &__subtext {
+      font-size: 12px;
+    }
+  }
+}
