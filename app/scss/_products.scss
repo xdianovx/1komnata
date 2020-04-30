@@ -155,8 +155,13 @@
   }
 
   .product-item {
-    width: 47%;
+    width: 100%;
     margin-bottom: 20px;
+  }
+
+  .product-item__link {
+    display: block;
+    width: 48%;
   }
 }
 
@@ -170,5 +175,10 @@
   .product-item {
     width: 100%;
     margin-bottom: 30px;
+  }
+
+  .product-item__link {
+    display: block;
+    width: 100%;
   }
 }
