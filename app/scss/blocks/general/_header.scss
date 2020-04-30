@@ -109,7 +109,7 @@
     }
 
     img {
-      width: 12px;
+      width: 22px;
     }
 
     &:hover {
@@ -413,6 +413,23 @@ form i {
 
     &__phone {
       font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header {
+    &__phone {
+      font-size: 14px;
+      padding-left: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    &__phone {
+      font-size: 12px;
     }
   }
 }
